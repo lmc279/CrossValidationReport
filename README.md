@@ -3,6 +3,7 @@
 This repository contains material for Advanced Stats Modeling course:
 
 1. Rmd template for project
+
   -**Template_Report.Rmd**
   
   -**Template_Report.html**
