@@ -1,17 +1,7 @@
-# STA6257 - Advanced Stats Modeling - Dr. Cohen
+# Welcome to STA6257 - Advanced Stats Modeling!
 
-This repository contains material for Advanced Stats Modeling course:
+This repository contains material for Advanced Stats Modeling course as follows:
 
-1. Rmd template for project
+1. Rmd template for project report
+2. R scripts for practice assignments
 
-  -**Template_Report.Rmd**
-  
-  -**Template_Report.html**
-  
-  -**Template_Report.pdf**
-  
-  -**references.bib**
-
-2. R codes for practice assignments
-
-  - **codes** folder has R scripts for practice assignments.
