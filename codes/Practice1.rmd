@@ -1,0 +1,70 @@
+---
+title: "Practice 1"
+author: "Student name"
+date: ""
+output: html_document
+---
+
+## Baby names distribution 
+We will look into the distribution of baby names.
+This data set has almost 2 millions names from 1880 to 2017. It was provided by the Social Security Administration. It has the following variables:
+
+- year: birth year
+- sex: Female or Male 
+- name: baby name
+- n: number of babies named "name" in that year with that sex
+
+##### Data Wrangling
+Read the data in R and called it **bbnames**:
+
+```{r, warning=TRUE, message=FALSE}
+#Code here
+# Load the data
+bbnames = read.csv("https://pages.uwf.edu/acohen/teaching/datasets/bbnames.csv")
+```
+
+Find the proportions of people born in the same year and with same sex. That is prop = n divided by total number of applicants in that year and that sex. Create a new variable `prop` using `mutate` and added to **bbnames**:
+
+```{r, warning=TRUE, message=FALSE}
+#Code here
+```
+
+Find the most popular, all time, name for each gender (hints: answer for females starts with **M** and males with **J**):
+
+```{r, warning=TRUE, message=FALSE}
+#Code here
+```
+
+
+Create a new data frame while creating a new variable `age` and filter by `age` - Pick a threshold that would keep only people who may still alive (you may use the age expectancy):
+
+```{r, warning=TRUE, message=FALSE}
+#Code here
+```
+
+##### Visualization
+
+Use ggplot to plot the distribution of the name *John*. Use geom_bar, geom_line, and facet_wrap to separate females and males.
+```{r, warning=TRUE, message=FALSE}
+#Code here
+
+```
+
+Use ggplot to plot the distribution of the name of your choice. Use geom_bar, geom_line, and facet_wrap to separate females and males.
+```{r, warning=TRUE, message=FALSE}
+#Code here
+
+```
+
+
+## Diploma problem (hat-check)
+10. You most likely heard about this problem before. Smith College is a residential women's liberal arts college in Northampton, MA that is steeped in tradition. One such tradition is to give each student at graduation a diploma at random. At the end of the ceremony, a diploma circle is formed, and students pass the diplomas that they receive to the person next to them, and step out once they've received their diploma. What is the expected number of students who receive their diplomas in the initial disbursement?
+
+The analytic solution (of the expect value) is easy to derive. Let $X_i$ is the event that $ith$ student receives their diploma then $E(X_i)=1/n$, for all i (the diplomas are uniformly distributed). n is the number of diplomas (students). Thus, if $Y$ is the sum of all the events $X_i$, then $E(Y)=1$. It is sometimes kind of surprising that the expected number of students receiving their diplomas in the initial disbursement does not depend on $n$. The variance can be more difficult to derive since $X_i$ are dependent.
+
+We will solve the problem using simulations with R. Simulate the problem and find the expected value and the variance of the number of students who receive their diplomas in the initial giving.
+
+```{r, warning=TRUE, message=FALSE}
+#Code here
+
+```
