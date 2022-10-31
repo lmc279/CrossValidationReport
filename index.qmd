@@ -1,0 +1,44 @@
+---
+title: "Cross Validation"
+author: "BA, LC, DG"
+date: '`r Sys.Date()`'
+format:
+  html:
+    code-fold: true
+course: STA 6257 - Advance Statistical Modeling
+bibliography: references.bib # file contains bibtex for references
+#always_allow_html: true # this allows to get PDF with HTML features
+---
+
+## Introduction
+
+## Methods
+
+
+
+
+## Analysis and Results
+### Data and Vizualisation
+A study was conducted to determine how...
+
+```{r, warning=FALSE, echo=T, message=FALSE}
+# loading packages 
+library(tidyverse)
+library(knitr)
+library(ggthemes)
+library(ggrepel)
+library(dslabs)
+```
+
+
+```{r, warning=FALSE, echo=TRUE}
+# Load Data
+
+
+```
+
+### Statistical Modeling
+
+### Conlusion
+
+## References
